@@ -1,0 +1,21 @@
+Byte-compiled / optimized / DLL files
+
+pycache/
+*.py[cod]
+*$py.class
+
+Lingkungan Virtual Python
+
+venv/
+.venv/
+env/
+.env
+
+Konfigurasi spesifik Streamlit (jangan commit file rahasia/password)
+
+.streamlit/secrets.toml
+
+File OS
+
+.DS_Store
+Thumbs.db
