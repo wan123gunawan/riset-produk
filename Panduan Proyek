@@ -1,0 +1,56 @@
+🛍️ Dashboard Riset Produk E-Commerce (Demo)
+
+Proyek ini adalah sebuah dashboard interaktif yang dibangun menggunakan Python dan Streamlit. Aplikasi ini dirancang untuk mensimulasikan ekstraksi data (web scraping) dari tautan produk platform e-commerce seperti Shopee dan TikTok Shop, kemudian memvisualisasikan data analitiknya.
+
+🚀 Fitur
+
+Antarmuka Pengguna Interaktif: Panel samping untuk memasukkan URL produk.
+
+Deteksi Platform Otomatis: Mendeteksi tautan Shopee atau TikTok secara pintar.
+
+Metrik Utama: Menampilkan Harga, Rating, Jumlah Ulasan, Stok, dan Total Terjual.
+
+Visualisasi Data: Menampilkan simulasi grafik tren penjualan dan fluktuasi harga dalam 30 hari terakhir.
+
+🛠️ Instalasi & Persiapan
+
+Kloning repositori ini (atau unduh file ZIP):
+
+git clone <url-repositori-anda>
+cd <nama-folder>
+
+
+Buat Virtual Environment (Sangat Direkomendasikan):
+
+python -m venv venv
+# Untuk Windows:
+venv\Scripts\activate
+# Untuk Mac/Linux:
+source venv/bin/activate
+
+
+Install library yang dibutuhkan:
+
+pip install -r requirements.txt
+
+
+💻 Cara Menjalankan
+
+Setelah semua persiapan selesai, jalankan aplikasi Streamlit menggunakan perintah berikut:
+
+streamlit run app.py
+
+
+Aplikasi akan otomatis terbuka di browser default Anda (biasanya di http://localhost:8501).
+
+⚠️ Catatan untuk Developer (Mode Produksi)
+
+Versi saat ini menggunakan Data Simulasi (Mock Data) untuk tujuan demonstrasi antarmuka karena penarikan data secara langsung sering diblokir oleh pelindung anti-bot (Cloudflare/Akamai).
+
+Untuk menghubungkannya ke sistem scraping yang asli:
+
+Buka file app.py.
+
+Cari fungsi scrape_product_data(url, platform).
+
+Ganti logika mock data dengan script bot browser sesungguhnya menggunakan pustaka seperti Playwright atau Selenium.
